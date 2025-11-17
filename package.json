@@ -1,0 +1,23 @@
+{
+  "name": "adam_assignment1_wad",
+  "version": "1.0.0",
+  "description": "You will only need one file, ie, your node module, for this assignment.",
+  "main": "adam_wad.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamamir69/Adam_Assignment1_WAD.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adamamir69/Adam_Assignment1_WAD/issues"
+  },
+  "homepage": "https://github.com/adamamir69/Adam_Assignment1_WAD#readme",
+  "dependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
