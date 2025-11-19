@@ -1,12 +1,36 @@
-# Assignment 1
+Setup
+Make sure you have Node.js installed in your system
+Create a app.js file to use the module
+const = require("./mackenzy_klook.js");
 
-You will only need one file, ie, your node module, for this assignment.
+##Functions
 
-In this readme file, describe how to use your node module. It could be similar to **app.js** from Lab2, where you call some functions in your node module and display the output. Describe how to setup your node module, if any. Describe how to call the functions, what parameters required and so on.
+## 1. addPetProfile()
 
-You can press **Ctrl+Shift+V** in this file in Visual Studio Code to see a live preview of the readme file.
+Purpose: Adds a profile/user
 
-For some tips in formatting text in readme file, refer to https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+Params: String
 
-# References
-Provide the references that you have used to support your assignment. 
+## 1. uploadPhoto()
+
+Purpose: upload Photo
+
+Params: String
+
+## 1. likePhoto()
+
+Purpose: Likes a photo
+
+Params: String
+
+## 1. getFeed()
+
+Purpose: retrieves all the feed
+
+Params: String
+
+## 1. followPet()
+
+Purpose: Follows a user
+
+Params: String

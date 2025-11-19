@@ -1,21 +1,40 @@
-const petgram = require('./adam_petgram.js');
+const instagram = require('./adam_instagram.js');
 
 //Add pet
-petgram.addPetProfile({ id: 1, name: "Mochi", species: "Cat", owner: "Adam" });
-petgram.addPetProfile({ id: 2, name: "Bibi", species: "Dog", owner: "Sarah" });
-petgram.addPetProfile({ id: 2, name: "Yan Kai", species: "Dog", owner: "Shang Xian" });
-
+instagram.addUserProfile({ id: 1, name: "Mochi", Age: "20", username: "mochimochi" });
+instagram.addUserProfile({ id: 2, name: "Adam", Age: "21", username: "Adam" });
+instagram.addUserProfile({ id: 3, name: "Jun Hua", Age: "24", username: "junhua" });
+instagram.addUserProfile({ id: 4, name:"Mackenzy", Age: "21", username: "mackenzychong"});
 
 // Upload photos
-petgram.uploadPhoto(1, { id: 100, caption: "Mochi sleeping!" });
-petgram.uploadPhoto(2, { id: 200, caption: "Bibi at the park!" });
-petgram.uploadPhoto(2, { id: 200, caption: "Yan Kai is getting touched by Shang Xian" })
+instagram.uploadPost(1, { id: 100, caption: "Mochi sleeping!" });
+instagram.uploadPost(2, { id: 200, caption: "Adam at the park!" });
+instagram.uploadPost(3, { id: 250, caption: "Jun Hua eating spicy food" })
+instagram.uploadPost(4, { id: 500, caption: "Mackenzy is in Gear 21" })
+
 // Like photo
-petgram.likePhoto(100);
-petgram.likePhoto(100);
+instagram.likePost(100);
+instagram.likePost(100);
+instagram.likePost(100);
+instagram.likePost(100);
+instagram.likePost(100);
+instagram.likePost(100);
+
+
+instagram.likePost(200);
+instagram.likePost(200);
+instagram.likePost(500);
+instagram.likePost(250);
+
+
+
 
 // Follow
-petgram.followPet(1, 2);
+instagram.followUser('Mackenzy', 'Adam');
+instagram.followUser('Jun Hua', 'Mackenzy');
+
 
 // Show feed
-console.log(petgram.getFeed());
+console.log(instagram.getFeed());
+console.log("Who does Mackenzy follow: ",instagram.getFollowers("Mackenzy"));
+console.log("Who is following Mackenzy: ",instagram.getFollowing("Mackenzy"));
