@@ -2,9 +2,9 @@ const users = [];
 const photos = [];
 const follows = [];
 
-function addUserProfile(pet){
-    users.push(pet);
-    return pet
+function addUserProfile(user){
+    users.push(user);
+    return user
 }
 
 function uploadPost(userId, photo){
